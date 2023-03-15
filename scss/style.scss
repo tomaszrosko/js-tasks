@@ -1,0 +1,135 @@
+@import 'variables';
+@import '../bootstrap5/scss/bootstrap.scss';
+
+
+body {
+  //font-family: 'Dancing Script', cursive;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(315deg, #065b06 0%, #047ed5 74%);
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+}
+
+.info {
+  text-align: center;
+  font-size: 30px;
+}
+
+.info h1 {
+  margin-bottom: 10px;
+  padding: 10px 50px;
+}
+
+.ball-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ball-img img {
+  margin-right: 7vw;
+  width: 27vw;
+  height: 19vw;
+  cursor: pointer;
+}
+
+.question-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 24px;
+}
+
+.question-area h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.question-area input {
+  padding: 10px 20px;
+  width: 80%;
+  font-size: 20px;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+.question-area .answer {
+  margin-top: 30px;
+}
+
+.question-area .answer span {
+  font-weight: bold;
+}
+
+.question-area .error {
+  font-weight: bold;
+  color: red;
+}
+
+.shake-animation {
+  animation: shake 1s 1;
+}
+
+@keyframes shake {
+  0% {
+    left: 29px;
+  }
+  20% {
+    left: 39px;
+  }
+  40% {
+    left: 29px;
+  }
+  60% {
+    left: 39px;
+  }
+  80% {
+    left: 29px;
+  }
+  100% {
+    left: 3px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .info h1 {
+    font-size: 36px;
+  }
+  .wraper {
+
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+  .question-area h2 {
+    font-size: 20px;
+  }
+}
