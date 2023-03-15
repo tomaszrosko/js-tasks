@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="scss/style.css" type="text/css"/>
+    <script src="https://kit.fontawesome.com/beb7bf71d1.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-auto">
+            <label for="converter">Konwerter <span class="one">°C</span> na <span class="two">°F</span></label>
+        </div>
+        <div class="col-12 col-md-auto"><input type="number" id="converter" placeholder="Wpisz liczbę...">
+            <p class="result"></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-auto order-2">
+            <button class="conv">Konwertuj</button>
+        </div>
+        <div class="col-6 col-md-auto order-1">
+            <button class="reset">Reset</button></div>
+        <div class="col-6 col-md-auto order-0">
+            <button class="change">Zamień</button>
+        </div>
+    </div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
