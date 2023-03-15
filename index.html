@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time countdown</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/beb7bf71d1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="scss/style.css" type="text/css"/>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="counter-app row">
+        <div class="settings col-12">
+            <h1>ustawienia</h1>
+            <label for="event-name">Nazwa wydarzenia:</label> <input type="text" id="event-name"
+                                                                     value="Wybory parlamentarne">
+            <table class="date">
+                <tr>
+                    <td><label for="event-day">Dzień:</label></td>
+                    <td><label for="event-month">Miesiąc:</label></td>
+                    <td><label for="event-year">Rok:</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="event-day" maxlength="2" value="28"></td>
+                    <td><input type="number" id="event-month" maxlength="2" value="10"></td>
+                    <td><input type="number" id="event-year" maxlength="4" value="2023"></td>
+                </tr>
+            </table>
+            <label for="event-image">Link do obrazka:</label> <input type="text" id="event-image"
+                                                                     value="https://img.freepik.com/darmowe-zdjecie/mloda-dziewczyna-robi-cwiczenia-za-klepsydra-zdjecia-wysokiej-jakosci_114579-92331.jpg?w=1480&t=st=1678193203~exp=1678193803~hmac=6ff4d37fd63e819f1eb75ebe8c4218a642d45fd8265a60b29bc548e6eb9d1233">
+            <button class="save">Zapisz</button>
+        </div>
+        <div class="app-body col-12 px-0">
+            <div class="image-section">
+                <div class="settings-btn"><i class="fas fa-sliders-h"></i></div>
+            </div>
+            <div class="time-section">
+                <h3><span class="event">Nowy rok</span> za:</h3>
+                <div class="time-cards row">
+                    <div class="card col-5 col-md-2">
+                        <p class="days-count number">1</p>
+                        <p class="card-title">Dni</p>
+                    </div>
+                    <div class="card col-5 col-md-2">
+                        <p class="hours-count number">23</p>
+                        <p class="card-title">Godzin</p>
+                    </div>
+                    <div class="card col-5 col-md-2">
+                        <p class="minutes-count number">48</p>
+                        <p class="card-title">Minut</p>
+                    </div>
+                    <div class="card col-5 col-md-2">
+                        <p class="seconds-count number">35</p>
+                        <p class="card-title">Sekund</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
