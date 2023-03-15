@@ -1,0 +1,49 @@
+@import 'variables';
+@import '../bootstrap5/scss/bootstrap.scss';
+
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #012a25;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+  min-height: 200px;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.fact {
+  margin-top: 20px;
+}
+
+@include media-breakpoint-down(sm) {
+  .container {
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+}
