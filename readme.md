@@ -7,7 +7,7 @@ Projects made to practice practical use of JavaScript elements. Each project is 
 
  - [Currency converter](https://tr-dev-currency-converter.netlify.app)
  - [Forms validator](https://tr-dev-forms-validator.netlify.app)
- - [Revealing hiding image](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+ - [Revealing hiding image](https://tr-dev-revealing-hiding-image.netlify.app)
  - [Notebook](https://tr-dev-revealing-hiding-image.netlify.app)
  - [Search Engine](https://tk-dev-search-engine.netlify.app )
  - [Tips](https://tr-dev-tips.netlify.app)
